@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 14:26:55 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/02 16:14:13 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/02 16:23:33 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,10 +73,3 @@ void	rush(int x, int y)
 	
 	ft_putchar('\n');	
 }
-
-/* 
-
-void	gap_line(int x, int y)
-{
-	
-} */
