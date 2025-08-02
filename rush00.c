@@ -6,12 +6,13 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 14:26:55 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/02 14:48:15 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/02 15:16:42 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
+
+void	ft_putchar()
 
 void	rush(int x, int y)
 {
