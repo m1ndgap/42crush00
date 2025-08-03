@@ -6,13 +6,13 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 14:28:36 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/03 14:38:04 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/03 14:39:42 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	rush(int, int);
+void	rush(int x, int y);
 
 int main()
 {
