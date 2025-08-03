@@ -6,24 +6,26 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 14:26:55 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/03 12:29:46 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/03 17:13:52 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar();
+void	ft_putchar(char c);
 
 void	edge_line(int x)
 {
-	int startX = x;
+	int	startx;
 
-	while (x > 0) {
-		if ((x - startX) == 0 || (x == 1))
+	startx = x;
+	while (x > 0)
+	{
+		if ((x - startx) == 0 || (x == 1))
 		{
 			ft_putchar('o');
 			x--;
-		} 
+		}
 		else if (x > 1)
 		{
 			ft_putchar('-');
@@ -35,16 +37,19 @@ void	edge_line(int x)
 
 void	gap_line(int x, int y)
 {
-	int gap = x - 2;
+	int	gap;
 
-	if (gap < 0) {
+	gap = x - 2;
+	if (gap < 0)
+	{
 		ft_putchar('|');
 		ft_putchar('\n');
 	}
-	else if (y > 0) 
+	else if (y > 0)
 	{
 		ft_putchar('|');
-		while(gap > 0) {
+		while (gap > 0)
+		{
 			ft_putchar(' ');
 			gap--;
 		}
@@ -53,14 +58,15 @@ void	gap_line(int x, int y)
 	}
 }
 
-
 void	rush(int x, int y)
 {
+	char	*msg;
+
+	msg = "ERROR: negative value provided\n";
 	if (y <= 0 || x <= 0)
 	{
-		char msg[] = "ERROR: negative value provided\n";
-    	write(2, msg, sizeof(msg) - 1);
-		return;
+		write(2, msg, 32);
+		return ;
 	}
 	edge_line(x);
 	while ((y - 2) > 0)
@@ -68,10 +74,7 @@ void	rush(int x, int y)
 		gap_line(x, y);
 		y--;
 	}
-	if (y > 1) {
+	if (y > 1)
 		edge_line(x);
-	}
-	
-	
-	ft_putchar('\n');	
+	ft_putchar('\n');
 }
