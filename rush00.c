@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 14:26:55 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/02 16:23:33 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/03 12:29:46 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,10 @@ void	gap_line(int x, int y)
 {
 	int gap = x - 2;
 
-	if (gap <= 0) {
+	if (gap < 0) {
 		ft_putchar('|');
 		ft_putchar('\n');
-	} 
+	}
 	else if (y > 0) 
 	{
 		ft_putchar('|');
@@ -58,6 +58,8 @@ void	rush(int x, int y)
 {
 	if (y <= 0 || x <= 0)
 	{
+		char msg[] = "ERROR: negative value provided\n";
+    	write(2, msg, sizeof(msg) - 1);
 		return;
 	}
 	edge_line(x);
