@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/03 14:33:09 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/03 17:13:32 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/03 17:23:59 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,5 +120,4 @@ void	rush(int x, int y)
 	{
 		last_line(x, 0);
 	}
-	ft_putchar('\n');
 }
